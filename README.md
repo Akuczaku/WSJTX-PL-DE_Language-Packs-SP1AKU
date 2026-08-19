@@ -6,6 +6,27 @@ Nieoficjalne pakiety językowe **PL / DE** dla **WSJT-X 3.0.2**, przygotowane pr
 
 > **Ważne:** WSJT-X jest projektem jego oryginalnych autorów i WSJT Development Team. Oznaczenie **SP1AKU Czaku** dotyczy polskich/niemieckich tłumaczeń, dokumentacji pomocniczej i przygotowania pakietów instalacyjnych – nie autorstwa programu WSJT-X.
 
+## ⬇️ Pobierz najnowszą wersję
+
+Kliknij odpowiedni przycisk — prowadzi bezpośrednio do pliku z **najnowszego GitHub Release**.
+
+<table>
+<tr>
+<td align="center"><a href="../../releases/latest/download/WSJTX_3.0.2_PL_FULL_FIX3_SP1AKU_Czaku_AUTO_PATH.zip"><img src="assets/download_windows_pl.svg" alt="Pobierz Windows PL" width="360"></a></td>
+<td align="center"><a href="../../releases/latest/download/WSJTX_3.0.2_DE_FULL_FIX3_SP1AKU_Czaku_AUTO_PATH.zip"><img src="assets/download_windows_de.svg" alt="Download Windows DE" width="360"></a></td>
+</tr>
+<tr>
+<td align="center"><a href="../../releases/latest/download/WSJTX_3.0.2_LINUX_PL_SP1AKU_Czaku.zip"><img src="assets/download_linux_pl.svg" alt="Pobierz Linux PL" width="360"></a></td>
+<td align="center"><a href="../../releases/latest/download/WSJTX_3.0.2_LINUX_DE_SP1AKU_Czaku.zip"><img src="assets/download_linux_de.svg" alt="Download Linux DE" width="360"></a></td>
+</tr>
+</table>
+
+**Pakiet Linux PL + DE w jednym archiwum:** [Pobierz Linux PL+DE](../../releases/latest/download/WSJTX_3.0.2_LINUX_PL_DE_SP1AKU_Czaku.zip)
+
+**Wszystkie wydania:** [GitHub Releases](../../releases/latest)
+
+> Linki `releases/latest/download/...` zawsze wskazują na pliki dołączone do aktualnego wydania oznaczonego jako **Latest**.
+
 ## Co zawiera repozytorium
 
 - polskie źródło Qt: `translations/wsjtx_pl.ts`
@@ -27,13 +48,7 @@ Nazwy trybów i standardowe skróty krótkofalarskie, np. FT8, FT4, Q65, WSPR, C
 
 ## Pobieranie gotowych paczek
 
-Dla użytkownika końcowego zalecane są gotowe archiwa dostępne w sekcji **Releases** repozytorium:
-
-- Windows PL – pełny interfejs, podręcznik, AUTO PATH
-- Windows DE – pełny interfejs, podręcznik, AUTO PATH
-- Linux PL
-- Linux DE
-- Linux PL+DE
+Najwygodniej użyć przycisków **Pobierz najnowszą wersję** na górze strony. Gotowe archiwa znajdują się w sekcji **Releases**.
 
 ## Windows
 
