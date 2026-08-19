@@ -1,5 +1,12 @@
 # WSJT-X 3.0.2 – Polish & German Language Packs
 
+<table>
+<tr>
+<td align="center"><img src="assets/banner_pl.png" alt="WSJT-X Polish language pack" width="460"></td>
+<td align="center"><img src="assets/banner_de.png" alt="WSJT-X German language pack" width="460"></td>
+</tr>
+</table>
+
 Unofficial **Polish and German** language packs for **WSJT-X 3.0.2**, prepared by **SP1AKU Czaku**.
 
 > WSJT-X remains the work of its original authors and the WSJT Development Team. The SP1AKU Czaku attribution applies to the PL/DE translations, helper documentation, and language-package installers, not to WSJT-X itself.
