@@ -1,0 +1,3 @@
+Deutsche Uebersetzung und Sprachpaket: SP1AKU Czaku
+
+Diese Kennzeichnung bezieht sich ausschliesslich auf die deutsche Uebersetzung und die Zusammenstellung des Sprachpakets. WSJT-X ist das Projekt seiner urspruenglichen Autoren und des WSJT Development Teams.

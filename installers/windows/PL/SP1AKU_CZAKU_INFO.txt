@@ -1,0 +1,6 @@
+Polskie tłumaczenie i pakiet językowy: SP1AKU Czaku
+
+Zakres: polskie tłumaczenie interfejsu, pakiet językowy, polska wersja podręcznika oraz skrypty instalacyjne.
+WSJT-X pozostaje projektem jego oryginalnych autorów; ten podpis dotyczy wyłącznie polskiego tłumaczenia i pakietu.
+
+AUTO PATH: obsluga instalacji WSJT-X na dowolnym dysku i w niestandardowej sciezce.

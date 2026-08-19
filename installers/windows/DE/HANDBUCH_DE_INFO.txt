@@ -1,0 +1,14 @@
+﻿WSJT-X 3.0.2 - Vollstaendiges deutsches Benutzerhandbuch
+==========================================================
+
+Deutsche Uebersetzung und Sprachpaket: SP1AKU Czaku
+
+Datei fuer die Installation:
+  wsjtx-main-3.0.2.html
+
+Zusaetzliche identische Kopie:
+  wsjtx-main-3.0.2_DE_FULL.html
+
+Die Struktur des offiziellen Handbuchs wurde beibehalten: Inhaltsverzeichnis, Kapitel, interne Links, Anker und 91 eingebettete Abbildungen. Technische Eigennamen, Protokolle, Befehle und Programmausgaben bleiben dort im Original, wo eine Uebersetzung ihre technische Bedeutung verfälschen koennte.
+
+SP1AKU Czaku

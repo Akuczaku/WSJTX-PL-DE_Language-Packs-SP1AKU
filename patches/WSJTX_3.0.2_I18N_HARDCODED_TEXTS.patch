@@ -1,0 +1,106 @@
+--- a/widgets/mainwindow.cpp
++++ b/widgets/mainwindow.cpp
+@@ -4664,13 +4664,14 @@
+   double a,b,rms,sigmaa,sigmab;
+   calibrate_(data_dir.constData(), &iz, &a, &b, &rms, &sigmaa, &sigmab, &irc, (FCL)data_dir.size());
+   QString t2;
+-  if(irc==-1) t2="Cannot open " + data_dir + "/fmt.all";
+-  if(irc==-2) t2="Cannot open " + data_dir + "/fcal2.out";
+-  if(irc==-3) t2="Insufficient data in fmt.all";
++  auto const data_path = QString::fromLocal8Bit (data_dir);
++  if(irc==-1) t2=tr ("Cannot open %1/fmt.all").arg (data_path);
++  if(irc==-2) t2=tr ("Cannot open %1/fcal2.out").arg (data_path);
++  if(irc==-3) t2=tr ("Insufficient data in fmt.all");
+   if(irc==-4) t2 = tr ("Invalid data in fmt.all at line %1").arg (iz);
+-  if(irc>0 or rms>1.0) t2="Check fmt.all for possible bad data.";
++  if(irc>0 or rms>1.0) t2=tr ("Check fmt.all for possible bad data.");
+   if (irc < 0 || irc > 0 || rms > 1.) {
+-    MessageBox::warning_message (this, "Calibration Error", t2);
++    MessageBox::warning_message (this, tr ("Calibration Error"), t2);
+   }
+   else if (MessageBox::Apply == MessageBox::query_message (this
+                                                            , tr ("Good Calibration Solution")
+@@ -16100,7 +16101,7 @@
+     QTextStream out(&f);
+     out << EventConfig;
+     f.close();
+-    MessageBox::critical_message (this,
++    MessageBox::critical_message (this, tr (
+             "                                     DIAGNOSTIC MODE\n"
+             "\n"
+             "You have switched to diagnostic mode. It allows you to collect data to\n"
+@@ -16117,7 +16118,7 @@
+             "has appeared, because the two log files grow to large sizes quickly.\n"
+             "\n"
+             "If you have accidentally switched to diagnostic mode, simply click\n"
+-            "\"Default event logging\" again.");
++            "\"Default event logging\" again."));
+ }
+ 
+ void MainWindow::on_actionDisable_event_logging_triggered()
+@@ -16283,42 +16284,42 @@
+         ui->autoButton->setChecked(false);  // ensure auoButton is unchecked
+     }
+     if (m_config.Territory1()=="") {
+-      ui->actionHideTerritory1->setText("Hide stations from Territory 1");
+-      ui->actionHighlightTerritory1->setText("Highlight stations from Territory 1");
++      ui->actionHideTerritory1->setText(tr ("Hide stations from Territory 1"));
++      ui->actionHighlightTerritory1->setText(tr ("Highlight stations from Territory 1"));
+     } else {
+-      ui->actionHideTerritory1->setText("Hide stations from " + m_config.Territory1());
+-      ui->actionHighlightTerritory1->setText("Highlight stations from " + m_config.Territory1());
++      ui->actionHideTerritory1->setText(tr ("Hide stations from %1").arg (m_config.Territory1()));
++      ui->actionHighlightTerritory1->setText(tr ("Highlight stations from %1").arg (m_config.Territory1()));
+     }
+     if (m_config.Territory2()=="") {
+-      ui->actionHideTerritory2->setText("Hide stations from Territory 2");
+-      ui->actionHighlightTerritory2->setText("Highlight stations from Territory 2");
++      ui->actionHideTerritory2->setText(tr ("Hide stations from Territory 2"));
++      ui->actionHighlightTerritory2->setText(tr ("Highlight stations from Territory 2"));
+     } else {
+-      ui->actionHideTerritory2->setText("Hide stations from " + m_config.Territory2());
+-      ui->actionHighlightTerritory2->setText("Highlight stations from " + m_config.Territory2());
++      ui->actionHideTerritory2->setText(tr ("Hide stations from %1").arg (m_config.Territory2()));
++      ui->actionHighlightTerritory2->setText(tr ("Highlight stations from %1").arg (m_config.Territory2()));
+     }
+     if (m_config.Territory3()=="") {
+-      ui->actionHideTerritory3->setText("Hide stations from Territory 3");
+-      ui->actionHighlightTerritory3->setText("Highlight stations from Territory 3");
++      ui->actionHideTerritory3->setText(tr ("Hide stations from Territory 3"));
++      ui->actionHighlightTerritory3->setText(tr ("Highlight stations from Territory 3"));
+     } else {
+-      ui->actionHideTerritory3->setText("Hide stations from " + m_config.Territory3());
+-      ui->actionHighlightTerritory3->setText("Highlight stations from " + m_config.Territory3());
++      ui->actionHideTerritory3->setText(tr ("Hide stations from %1").arg (m_config.Territory3()));
++      ui->actionHighlightTerritory3->setText(tr ("Highlight stations from %1").arg (m_config.Territory3()));
+     }
+     if (m_config.Territory4()=="") {
+-      ui->actionHideTerritory4->setText("Hide stations from Territory 4");
+-      ui->actionHighlightTerritory4->setText("Highlight stations from Territory 4");
++      ui->actionHideTerritory4->setText(tr ("Hide stations from Territory 4"));
++      ui->actionHighlightTerritory4->setText(tr ("Highlight stations from Territory 4"));
+     } else {
+-      ui->actionHideTerritory4->setText("Hide stations from " + m_config.Territory4());
+-      ui->actionHighlightTerritory4->setText("Highlight stations from " + m_config.Territory4());
++      ui->actionHideTerritory4->setText(tr ("Hide stations from %1").arg (m_config.Territory4()));
++      ui->actionHighlightTerritory4->setText(tr ("Highlight stations from %1").arg (m_config.Territory4()));
+     }
+ 
+     if (m_config.twoDays()) {
+-      ui->actionHideToday->setText("Hide stations worked today or yesterday");
+-      ui->actionIgnoreToday->setText("Ignore stations worked today or yesterday");
+-      ui->actionHighlightToday->setText("Highlight callsigns worked today or yesterday");
+-    } else {
+-      ui->actionHideToday->setText("Hide stations worked today");
+-      ui->actionIgnoreToday->setText("Ignore stations worked today");
+-      ui->actionHighlightToday->setText("Highlight callsigns worked today");
++      ui->actionHideToday->setText(tr ("Hide stations worked today or yesterday"));
++      ui->actionIgnoreToday->setText(tr ("Ignore stations worked today or yesterday"));
++      ui->actionHighlightToday->setText(tr ("Highlight callsigns worked today or yesterday"));
++    } else {
++      ui->actionHideToday->setText(tr ("Hide stations worked today"));
++      ui->actionIgnoreToday->setText(tr ("Ignore stations worked today"));
++      ui->actionHighlightToday->setText(tr ("Highlight callsigns worked today"));
+     }
+ 
+     if (!m_config.button_coloring_disabled()) {

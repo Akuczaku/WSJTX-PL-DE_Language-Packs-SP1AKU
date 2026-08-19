@@ -1,0 +1,10 @@
+SP1AKU CZAKU — INFORMACJA O PAKIECIE
+
+Polskie tłumaczenie i pakiet językowy: SP1AKU Czaku
+Platforma: Linux
+WSJT-X: 3.0.2
+Język: polski (pl)
+
+Pakiet zawiera tłumaczenie interfejsu, pełny polski podręcznik HTML,
+instalator i deinstalator użytkownika Linux oraz opcjonalny patch i18n do źródeł.
+WSJT-X pozostaje własnością/projektem jego oryginalnych autorów oraz WSJT Development Team.
